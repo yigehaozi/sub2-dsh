@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
 import { createApp } from 'vue'
 import '@lobehub/webfont-harmony-sans/css/index.css'
 import '@lobehub/webfont-harmony-sans-sc-mini/css/index.css'

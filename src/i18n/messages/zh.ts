@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
 export default {
   batchImageGuide: {
     title: '图片批量生成',

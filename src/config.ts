@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
 export interface SiteConfig {
   siteName: string
   siteSubtitle: string

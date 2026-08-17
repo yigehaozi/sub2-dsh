@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: LGPL-3.0-or-later -->
 <template>
   <div
     ref="root"
@@ -613,4 +614,3 @@ onBeforeUnmount(() => {
   display: none;
 }
 </style>
-

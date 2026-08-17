@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
 import { describe, expect, it } from 'vitest'
 
 import { ORIGIN_REPOSITORY_URL, createSiteConfig } from '../config'

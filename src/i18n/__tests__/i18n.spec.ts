@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 const STORAGE_KEY = 'sub2-dsh.locale'
