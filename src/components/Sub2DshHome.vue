@@ -432,7 +432,13 @@ function setupRevealObserver() {
       observer?.unobserve(entry.target)
     })
   }, { threshold: 0.14 })
-  elements.forEach((element) => observer?.observe(element))
+  elements.forEach((element) => {
+    if (element.getBoundingClientRect().top <= window.innerHeight * 1.05) {
+      element.classList.add('is-visible')
+      return
+    }
+    observer?.observe(element)
+  })
 }
 
 onMounted(() => {
@@ -1383,8 +1389,8 @@ onBeforeUnmount(() => {
 }
 
 .sub2-reveal {
-  opacity: 0;
-  transform: translateY(22px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 650ms ease, transform 650ms ease;
 }
 
@@ -1962,6 +1968,7 @@ onBeforeUnmount(() => {
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .sub2-hero-right {

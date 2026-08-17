@@ -373,6 +373,7 @@ function setup() {
       alpha: true,
       premultipliedAlpha: true,
       antialias: false,
+      preserveDrawingBuffer: true,
       dpr: Math.min(window.devicePixelRatio || 1, 2),
     })
     const gl = renderer.gl

@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: LGPL-3.0-or-later -->
 <template>
   <svg
-    :class="sizeClass"
+    :class="['home-icon', sizeClass]"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -32,10 +32,23 @@ const props = withDefaults(defineProps<{
 }>(), { size: 'md', strokeWidth: 1.5 })
 
 const sizeClass = computed(() => ({
-  xs: 'h-3 w-3',
-  sm: 'h-4 w-4',
-  md: 'h-5 w-5',
-  lg: 'h-6 w-6',
-  xl: 'h-8 w-8',
+  xs: 'home-icon--xs',
+  sm: 'home-icon--sm',
+  md: 'home-icon--md',
+  lg: 'home-icon--lg',
+  xl: 'home-icon--xl',
 }[props.size]))
 </script>
+
+<style scoped>
+.home-icon {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.home-icon--xs { width: 12px; height: 12px; }
+.home-icon--sm { width: 16px; height: 16px; }
+.home-icon--md { width: 20px; height: 20px; }
+.home-icon--lg { width: 24px; height: 24px; }
+.home-icon--xl { width: 32px; height: 32px; }
+</style>

@@ -439,7 +439,7 @@ function setupWebGL(): void {
       alpha: true,
       antialias: false,
       premultipliedAlpha: true,
-      preserveDrawingBuffer: false,
+      preserveDrawingBuffer: true,
     })
   } catch {
     gl = null
