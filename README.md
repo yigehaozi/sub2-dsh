@@ -4,7 +4,7 @@ JGY.AI 的独立深色 Vue 3 主页，包含 WebGL 波浪、等高线动效、�
 
 JGY.AI's standalone dark Vue 3 homepage with WebGL waves, topographic motion, bilingual copy, and responsive layouts. It has no backend dependency and can be built and deployed as a static site.
 
-[在线预览 / Live Demo](https://yigehaozi.github.io/sub2-dsh/) · [源仓库 / Repository](https://github.com/yigehaozi/sub2-dsh)
+[在线预览 / Live Demo](https://jgy.ai) · [源仓库 / Repository](https://github.com/yigehaozi/sub2-dsh)
 
 ![JGY.AI homepage preview](docs/preview.png)
 
